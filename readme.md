@@ -10,4 +10,4 @@ This is a simple REST API solution to expose the MongoDB 'Restaurants' sample da
 
 This was written in Visual Studio for Mac OSX using the .NET Core 2.0 framework. Special care was taken to manage library and namespace references to keep the domain model decoupled from the underlying storage implementation.
 
-![](https://imgur.com/l1jNYFZ "Restaurants REST API Swagger UI")
+![](https://i.imgur.com/32EtUz5.png "Restaurants REST API Swagger UI")
