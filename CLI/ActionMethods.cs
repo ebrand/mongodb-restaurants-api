@@ -15,5 +15,18 @@ namespace Restaurants.CLI
             foreach (var r in repo.GetMany())
                 Console.WriteLine(r.ToJson(true));
         }
+
+        [ArgActionMethod]
+        public void restaurant(RestIdArg arg)
+        {
+            IRestaurantRepository repo = new RestaurantRepository_MongoDb();
+            Console.WriteLine(repo.GetOne(arg.RestId).ToJson(true));
+        }
+
+        public class RestIdArg
+        {
+            [ArgRequired, ArgDescription("The restaurant ID to retrieve."), ArgPosition(1)]
+            public string RestId { get; set; }
+        }
     }
 }
