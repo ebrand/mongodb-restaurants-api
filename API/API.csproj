@@ -20,6 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Repositories.Fake\Repositories.Fake.csproj" />
+    <ProjectReference Include="..\Repositories.MongoDb\Repositories.MongoDb.csproj" />
+    <ProjectReference Include="..\Repositories.Interfaces\Repositories.Interfaces.csproj" />
   </ItemGroup>
 </Project>

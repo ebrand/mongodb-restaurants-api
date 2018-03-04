@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
 using Restaurants.Models;
 
-namespace Restaurants.Repositories
+namespace Restaurants.Repositories.MongoDb
 {
     public class RestaurantRepository_MongoDb : IRestaurantRepository
     {
@@ -17,15 +18,20 @@ namespace Restaurants.Repositories
         public RestaurantRepository_MongoDb()
         {
             _client = new MongoClient("mongodb://localhost:27017");
+
+            ConventionRegistry.Register(
+                "Ignore extra elements convention for the 'Restaurants.Models.*' namespace.",
+                new ConventionPack { new IgnoreExtraElementsConvention(ignoreExtraElements: true) },
+                t => t.FullName.StartsWith("Restaurants.Models.", StringComparison.InvariantCulture)
+            );
+
             _db = _client.GetDatabase("test");
             _restaurants = _db.GetCollection<Restaurant>("restaurants");
         }
 
-        public List<Restaurant> GetMany(int count = -1)
+        public List<Restaurant> GetMany()
         {
-            return (count > 0)
-                ? _restaurants.Find(new BsonDocument()).Limit(count).ToList()
-                : _restaurants.Find(new BsonDocument()).ToList();
+            return _restaurants.Find(new BsonDocument()).ToList();
         }
 
         public Restaurant GetOne(string rest_id)

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Restaurants.Repositories;
+using Restaurants.Repositories.Fake;
+using Restaurants.Repositories.MongoDb;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Restaurants.API
@@ -31,6 +33,7 @@ namespace Restaurants.API
                 })
 
                 // dependency injection interfaces and associated concrete types
+                //.AddTransient<IRestaurantRepository, RestaurantRepository_Fake>()
                 .AddTransient<IRestaurantRepository, RestaurantRepository_MongoDb>()
 
                 // add MVS services

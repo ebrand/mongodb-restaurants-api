@@ -1,30 +1,29 @@
 ﻿using System;
-using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 
 namespace Restaurants.Models
 {
-    [BsonIgnoreExtraElements]
     public class Address
     {
-        [BsonElement("building")]
-        public string Building { get; set; }
+        [JsonProperty("building")]
+        public string building { get; set; }
 
-        [BsonElement("street")]
-        public string Street { get; set; }
+        [JsonProperty("street")]
+        public string street { get; set; }
 
-        [BsonElement("zipcode")]
-        public string ZipCode { get; set; }
+        [JsonProperty("zipcode")]
+        public string zipcode { get; set; }
 
-        [BsonElement("coord")]
-        public object[] Coord { get; set; }
+        [JsonProperty("coord")]
+        public object[] coord { get; set; }
 
         public Address() {}
         public Address(string building, string street, string zipcode, object[] coord)
         {
-            this.Building = building;
-            this.Street = street;
-            this.ZipCode = zipcode;
-            this.Coord = coord;
+            this.building = building;
+            this.street = street;
+            this.zipcode = zipcode;
+            this.coord = coord;
         }
     }
 }

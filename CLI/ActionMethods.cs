@@ -1,7 +1,7 @@
 ﻿using System;
-using MongoDB.Bson;
 using PowerArgs;
 using Restaurants.Repositories;
+using Restaurants.Repositories.MongoDb;
 using Utilities;
 
 namespace Restaurants.CLI
@@ -9,17 +9,11 @@ namespace Restaurants.CLI
     public class ActionMethods
     {
         [ArgActionMethod]
-        public void restaurants(TestArgs args)
+        public void restaurants()
         {
             IRestaurantRepository repo = new RestaurantRepository_MongoDb();
-            foreach (var r in repo.GetMany(args.Count))
+            foreach (var r in repo.GetMany())
                 Console.WriteLine(r.ToJson(true));
         }
-    }
-
-    public class TestArgs
-    {
-        [ArgDescription("The number of restaurants to return in a sinlge call."), ArgPosition(1)]
-        public int Count { get; set; }
     }
 }

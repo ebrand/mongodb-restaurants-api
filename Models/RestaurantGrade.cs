@@ -1,26 +1,25 @@
 ﻿using System;
-using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 
 namespace Restaurants.Models
 {
-    [BsonIgnoreExtraElements]
     public class RestaurantGrade
     {
-        [BsonElement("date")]
-        public DateTime Date { get; set; }
+        [JsonProperty("date")]
+        public DateTime date { get; set; }
 
-        [BsonElement("grade")]
-        public string Grade { get; set; }
+        [JsonProperty("grade")]
+        public string grade { get; set; }
 
-        [BsonElement("score")]
-        public int? Score { get; set; }
+        [JsonProperty("score")]
+        public int? score { get; set; }
 
         public RestaurantGrade() {}
         public RestaurantGrade(DateTime date, string grade, int score)
         {
-            this.Date = date;
-            this.Grade = grade;
-            this.Score = score;
+            this.date = date;
+            this.grade = grade;
+            this.score = score;
         }
     }
 }

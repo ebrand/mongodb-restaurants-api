@@ -6,8 +6,8 @@ namespace Restaurants.Repositories
 {
     public interface IRestaurantRepository
     {
-        Restaurant GetOne(string rest_id);
+        List<Restaurant> GetMany();
 
-        List<Restaurant> GetMany(int count = -1);
+        Restaurant GetOne(string rest_id);
     }
 }

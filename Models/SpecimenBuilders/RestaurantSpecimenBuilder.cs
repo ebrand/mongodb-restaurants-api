@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Reflection;
 using AutoFixture.Kernel;
-using MongoDB.Bson;
 
 namespace Restaurants.Models.SpecimenBuilders
 {
@@ -13,9 +12,6 @@ namespace Restaurants.Models.SpecimenBuilders
 
             if (request is PropertyInfo propInfo && propInfo.ReflectedType == typeof(Restaurant))
             {
-                if (propInfo.Name == "Id" && propInfo.ReflectedType != typeof(string))
-                    return ObjectId.GenerateNewId();
-
                 if (propInfo.Name == "Restaurant_Id" && propInfo.PropertyType != typeof(string))
                     return faker.IndexGlobal.ToString();
 

@@ -1,43 +1,37 @@
 ﻿using System;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+//using Newtonsoft.Json;
 
 namespace Restaurants.Models
 {
-    [BsonIgnoreExtraElements]
     public class Restaurant
     {
-        [BsonElement("_id")]
-        public ObjectId Id { get; set; }
+        //[BsonProperty("restaurant_id")]
+        public string restaurant_id { get; set; }
 
-        [BsonElement("restaurant_id")]
-        public string Restaurant_Id { get; set; }
+        //[JsonProperty("name")]
+        public string name { get; set; }
 
-        [BsonElement("name")]
-        public string Name { get; set; }
+        //[JsonProperty("borough")]
+        public string borough { get; set; }
 
-        [BsonElement("borough")]
-        public string Borough { get; set; }
+        //[JsonProperty("cuisine")]
+        public string cuisine { get; set; }
 
-        [BsonElement("cuisine")]
-        public string Cuisine { get; set; }
+        //[JsonProperty("address")]
+        public Address address { get; set; }
 
-        [BsonElement("address")]
-        public Address Address { get; set; }
-
-        [BsonElement("grades")]
-        public RestaurantGrade[] Grades { get; set; }
+        //[JsonProperty("grades")]
+        public RestaurantGrade[] grades { get; set; }
 
         public Restaurant() {}
-        public Restaurant(ObjectId id, string rest_id, string name, string borough, string cuisine, Address address, RestaurantGrade[] grades)
+        public Restaurant(string rest_id, string name, string borough, string cuisine, Address address, RestaurantGrade[] grades)
         {
-            this.Id = id;
-            this.Restaurant_Id = rest_id;
-            this.Name = name;
-            this.Borough = borough;
-            this.Cuisine = cuisine;
-            this.Address = address;
-            this.Grades = grades;
+            this.restaurant_id = rest_id;
+            this.name = name;
+            this.borough = borough;
+            this.cuisine = cuisine;
+            this.address = address;
+            this.grades = grades;
         }
     }
 }

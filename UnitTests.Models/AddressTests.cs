@@ -21,13 +21,13 @@ namespace Restaurants.UnitTests.Models
             var coord1 = 40.662942M;
 
             var addr = new Address("Building", "Street", "ZipCode", new object[]{coord0, coord1});
-            addr.Building.ShouldNotBeEmpty();
-            addr.Street.ShouldNotBeEmpty();
-            addr.ZipCode.ShouldNotBeEmpty();
-            addr.Coord.ShouldNotBeNull();
-            addr.Coord.Length.ShouldBe(2);
-            addr.Coord.GetValue(0).ShouldBe(coord0);
-            addr.Coord.GetValue(1).ShouldBe(coord1);
+            addr.building.ShouldNotBeEmpty();
+            addr.street.ShouldNotBeEmpty();
+            addr.zipcode.ShouldNotBeEmpty();
+            addr.coord.ShouldNotBeNull();
+            addr.coord.Length.ShouldBe(2);
+            addr.coord.GetValue(0).ShouldBe(coord0);
+            addr.coord.GetValue(1).ShouldBe(coord1);
         }
     }
 }
