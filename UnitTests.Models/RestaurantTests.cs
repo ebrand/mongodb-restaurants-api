@@ -30,15 +30,15 @@ namespace Restaurants.UnitTests.Models
                     new RestaurantGrade(DateTime.Now, "B", 1)
                 }
             );
-            rest.restaurant_id.ShouldNotBeEmpty();
-            rest.name.ShouldNotBeEmpty();
-            rest.borough.ShouldNotBeEmpty();
-            rest.cuisine.ShouldNotBeEmpty();
-            rest.address.ShouldNotBeNull();
-            rest.grades.ShouldNotBeNull();
-            rest.grades.Length.ShouldBe(2);
-            rest.grades[0].ShouldNotBeNull();
-            rest.grades[1].ShouldNotBeNull();
+            rest.RestaurantId.ShouldNotBeEmpty();
+            rest.Name.ShouldNotBeEmpty();
+            rest.Borough.ShouldNotBeEmpty();
+            rest.Cuisine.ShouldNotBeEmpty();
+            rest.Address.ShouldNotBeNull();
+            rest.Grades.ShouldNotBeNull();
+            rest.Grades.Length.ShouldBe(2);
+            rest.Grades[0].ShouldNotBeNull();
+            rest.Grades[1].ShouldNotBeNull();
         }
     }
 }

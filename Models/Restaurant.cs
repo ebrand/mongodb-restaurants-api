@@ -1,37 +1,30 @@
 ﻿using System;
-//using Newtonsoft.Json;
 
 namespace Restaurants.Models
 {
     public class Restaurant
     {
-        //[BsonProperty("restaurant_id")]
-        public string restaurant_id { get; set; }
+        public string RestaurantId { get; set; }
 
-        //[JsonProperty("name")]
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        //[JsonProperty("borough")]
-        public string borough { get; set; }
+        public string Borough { get; set; }
 
-        //[JsonProperty("cuisine")]
-        public string cuisine { get; set; }
+        public string Cuisine { get; set; }
 
-        //[JsonProperty("address")]
-        public Address address { get; set; }
+        public Address Address { get; set; }
 
-        //[JsonProperty("grades")]
-        public RestaurantGrade[] grades { get; set; }
+        public RestaurantGrade[] Grades { get; set; }
 
         public Restaurant() {}
         public Restaurant(string rest_id, string name, string borough, string cuisine, Address address, RestaurantGrade[] grades)
         {
-            this.restaurant_id = rest_id;
-            this.name = name;
-            this.borough = borough;
-            this.cuisine = cuisine;
-            this.address = address;
-            this.grades = grades;
+            this.RestaurantId = rest_id;
+            this.Name = name;
+            this.Borough = borough;
+            this.Cuisine = cuisine;
+            this.Address = address;
+            this.Grades = grades;
         }
     }
 }

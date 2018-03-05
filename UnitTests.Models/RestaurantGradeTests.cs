@@ -18,9 +18,9 @@ namespace Restaurants.UnitTests.Models
         public void RestaurantGrade_Has_Valid_Properties()
         {
             var rg = new RestaurantGrade(DateTime.Now, "A", 1);
-            rg.date.ShouldNotBeNull();
-            rg.grade.ShouldNotBeEmpty();
-            rg.score.ShouldNotBe(0);
+            rg.Date.ShouldNotBeNull();
+            rg.LetterGrade.ShouldNotBeEmpty();
+            rg.NumericScore.ShouldNotBe(0);
         }
     }
 }
