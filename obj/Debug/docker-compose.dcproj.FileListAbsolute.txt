@@ -1,0 +1,1 @@
+/Users/ebrand/Projects/Restaurants/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache

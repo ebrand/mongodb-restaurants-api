@@ -1,0 +1,13 @@
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Repositories.Interfaces.deps.json
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Repositories.Interfaces.dll
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Repositories.Interfaces.pdb
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Models.dll
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Utilities.dll
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Models.pdb
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/bin/Debug/netcoreapp2.0/Utilities.pdb
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.csprojResolveAssemblyReference.cache
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.csproj.CoreCompileInputs.cache
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.AssemblyInfoInputs.cache
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.AssemblyInfo.cs
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.dll
+/Users/ebrand/Projects/Restaurants/Repositories.Interfaces/obj/Debug/netcoreapp2.0/Repositories.Interfaces.pdb

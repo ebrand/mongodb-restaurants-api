@@ -21,7 +21,7 @@ namespace Restaurants.Repositories.MongoDb
             // configure MongoDB conventions and model mappings
             ConfigureMongoConventionsAndMappings();
 
-            _client = new MongoClient("mongodb://localhost:27017");
+            _client = new MongoClient("mongodb://172.17.0.2:27017");
             _db = _client.GetDatabase("test");
             _restaurants = _db.GetCollection<Restaurant>("restaurants");
         }

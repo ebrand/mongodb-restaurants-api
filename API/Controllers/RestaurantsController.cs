@@ -28,6 +28,7 @@ namespace Restaurants.API.Controllers
 
             if (result == null || result.Count == 0)
             {
+                _logger.LogWarning(new EventId(204, "Restaurants.GetMany()"), "Requested content not found.");
                 return NoContent();
             }
 
@@ -43,7 +44,10 @@ namespace Restaurants.API.Controllers
             var result = _repo.GetOne(rest_id.ToString());
 
             if (result == null)
+            {
+                _logger.LogWarning(new EventId(204, "Restaurants.GetOne({rest_id})"), "Requested content not found.");
                 return NoContent();
+            }
 
             return Ok(result);
         }

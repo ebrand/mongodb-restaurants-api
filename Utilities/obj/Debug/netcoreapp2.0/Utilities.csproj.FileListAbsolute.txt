@@ -1,0 +1,9 @@
+/Users/ebrand/Projects/Restaurants/Utilities/bin/Debug/netcoreapp2.0/Utilities.deps.json
+/Users/ebrand/Projects/Restaurants/Utilities/bin/Debug/netcoreapp2.0/Utilities.dll
+/Users/ebrand/Projects/Restaurants/Utilities/bin/Debug/netcoreapp2.0/Utilities.pdb
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.csprojResolveAssemblyReference.cache
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.csproj.CoreCompileInputs.cache
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.AssemblyInfoInputs.cache
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.AssemblyInfo.cs
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.dll
+/Users/ebrand/Projects/Restaurants/Utilities/obj/Debug/netcoreapp2.0/Utilities.pdb

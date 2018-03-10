@@ -1,0 +1,16 @@
+services:
+  api:
+    build:
+      context: /Users/ebrand/Projects/Restaurants
+      dockerfile: API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: api
+    ports:
+    - target: 80
+  cli:
+    build:
+      context: /Users/ebrand/Projects/Restaurants
+      dockerfile: CLI/Dockerfile
+    image: cli
+version: '3.4'

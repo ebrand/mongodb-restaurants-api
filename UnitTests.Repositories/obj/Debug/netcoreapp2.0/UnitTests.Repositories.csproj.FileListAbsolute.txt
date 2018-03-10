@@ -1,0 +1,14 @@
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/UnitTests.Repositories.deps.json
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/UnitTests.Repositories.runtimeconfig.json
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/UnitTests.Repositories.runtimeconfig.dev.json
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/UnitTests.Repositories.dll
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/bin/Debug/netcoreapp2.0/UnitTests.Repositories.pdb
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.csprojResolveAssemblyReference.cache
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.csproj.CoreCompileInputs.cache
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.AssemblyInfoInputs.cache
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.AssemblyInfo.cs
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.dll
+/Users/ebrand/Projects/Restaurants/UnitTests.Repositories/obj/Debug/netcoreapp2.0/UnitTests.Repositories.pdb

@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using PowerArgs;
-using Restaurants.Repositories;
-using Restaurants.Repositories.MongoDb;
+using RestSharp;
 using Utilities;
+using Restaurants.Models;
 
 namespace Restaurants.CLI
 {
@@ -11,16 +12,19 @@ namespace Restaurants.CLI
         [ArgActionMethod]
         public void restaurants()
         {
-            IRestaurantRepository repo = new RestaurantRepository_MongoDb();
-            foreach (var r in repo.GetMany())
-                Console.WriteLine(r.ToJson(true));
+            var client = new RestSharp.RestClient("http://API/api/restaurants");
+            var response = client.Get<List<Restaurant>>(new RestRequest());
+            var rests = response.Data;
+            Console.WriteLine(rests.ToJson(true));
         }
 
         [ArgActionMethod]
         public void restaurant(RestIdArg arg)
         {
-            IRestaurantRepository repo = new RestaurantRepository_MongoDb();
-            Console.WriteLine(repo.GetOne(arg.RestId).ToJson(true));
+            var client = new RestSharp.RestClient(string.Format("http://API/api/restaurants/{0}", arg.RestId));
+            var response = client.Get<Restaurant>(new RestRequest());
+            var rest = response.Data;
+            Console.WriteLine(rest.ToJson(true));
         }
 
         public class RestIdArg

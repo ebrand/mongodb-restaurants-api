@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.MongoDb", "Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.Interfaces", "Repositories.Interfaces\Repositories.Interfaces.csproj", "{3E2A98AD-5ED2-4AA7-A948-D4ACE1E019F7}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EC331F01-60F1-4EC2-BE3C-5E19E411284A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{3E2A98AD-5ED2-4AA7-A948-D4ACE1E019F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E2A98AD-5ED2-4AA7-A948-D4ACE1E019F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E2A98AD-5ED2-4AA7-A948-D4ACE1E019F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC331F01-60F1-4EC2-BE3C-5E19E411284A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC331F01-60F1-4EC2-BE3C-5E19E411284A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC331F01-60F1-4EC2-BE3C-5E19E411284A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC331F01-60F1-4EC2-BE3C-5E19E411284A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3C35953C-D7F3-4FD0-BA0A-A72D78A75220} = {17A36AF1-4DA4-41C1-8751-D73434FFF1DA}

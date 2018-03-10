@@ -33,7 +33,7 @@ namespace Restaurants.API
                 })
 
                 // dependency injection interfaces and associated concrete types
-                .AddSingleton<IRestaurantRepository, RestaurantRepository_Fake>()
+                .AddSingleton<IRestaurantRepository, RestaurantRepository_MongoDb>()
                 //.AddSingleton<IRestaurantRepository, RestaurantRepository_MongoDb>()
 
                 // add MVS services
